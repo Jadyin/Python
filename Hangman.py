@@ -2,7 +2,7 @@ import random
 from wordlist import words
 import string
 
-print("Yes I work")
+print("Entering the game of Hangman")
 
 def valid_word(wordle):
     word = random.choice(words)
@@ -48,6 +48,3 @@ def hangman():
         print("Congrats you won the word was:", word,"!!\n")
 
 hangman()
-
-
-
