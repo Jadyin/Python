@@ -2,15 +2,13 @@ import random
 from wordlist import words
 import string
 
-print("Entering the game of Hangman")
+print("Starting a game of Hangman!!!")
 
 def valid_word(wordle):
     word = random.choice(words)
     while "-" in word or " " in word:
         word = random.choice(words)
     return word
-
-
 
 
 def hangman():
@@ -48,3 +46,6 @@ def hangman():
         print("Congrats you won the word was:", word,"!!\n")
 
 hangman()
+
+
+
